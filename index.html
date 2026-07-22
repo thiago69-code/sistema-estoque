@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container"> 
+    <h1>Sistema de Estoque</h1>
+
+    <section class="box-card">
+
+    <h2>Adicionar Novo Item</h2>
+
+    <form id="form-estoque">
+
+    <div class="input-group">
+
+        <label for="produto">Nome de Mercadorias</label>
+
+         <input type="text" id="produto" placeholder="Ex: Produto" required>
+       
+    </div>
+    <div class="input-group">
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" placeholder="Ex: 33" min="1" required>
+    </div>
+
+    <button type="submit" class="btn-salvar">Salvar no Estoque</button>
+   
+    </form>
+    </section>
+
+    <section class="box-card">
+        <h2>Estoque Atual</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mercadorias</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>Criado por <abbr title="Realizado no dia 22/07/26">Thiago Moreira</abbr> </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    background-color:#1D2326;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    height: 100vh;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #6A6A61;
+    font-size: 2.8em;
+    
+}
+
+.box-card {
+    background-color: #6A6A61;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    color: #DDDCC5;
+    border-bottom: 2px solid rgb(187, 179, 179);
+    padding-bottom: 8px;
+}
+
+#form-estoque {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: .85em;
+    font-weight: bold;
+    color:#1D2326;
+}
+
+input {
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: .95em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color:#ff1e00;
+}
+
+btn-salvar {
+    background-color: rgb(25, 0, 255);
+    color:#1D2326;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: .95em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+btn-salvar:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #DDDCC5;
+}
+
+th {
+    background-image: linear-gradient(to left,#6A6A61, #dddcc570);
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: .9em;
+    color:#000000;
+    font-weight: bold;
+}
+
+.btn-excluir {
+    background-color: red;
+    color: #DDDCC5;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .75em;
+}
+
+.btn-excluir:hover {
+    background-color: blue;
+}
+
+footer {
+   margin: 15px;
+   font-weight: bold;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+footer abbr {
+    text-decoration: none;
+}
+
+footer abbr:hover {
+    text-decoration: underline;
+}
+
